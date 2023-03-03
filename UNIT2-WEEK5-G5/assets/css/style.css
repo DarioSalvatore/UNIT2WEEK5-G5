@@ -5,22 +5,29 @@ font-family: 'Spectral', serif;*/
 
 .flex {
     display: flex;
-    align-items: center;
+    
 }
 
 /*Header*/
 
 .giallo {
     background-color: #ffc017;
+    
 }
 
 .dimensione {
     padding-left: 50px;
     padding-right: 50px;
     padding-bottom: 60px;
+    width: 100%;
 }
 
 nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    width: 100%;
     border-bottom: 1px solid #191919;
     padding: 15px;
     color: #191919;
@@ -52,7 +59,7 @@ nav a {
 
 .hm {
     font-family: 'Spectral', serif;
-    margin-top: 60px;
+    margin-top: 70px;
     
 }
 
@@ -84,11 +91,11 @@ header {
 .container {
     margin-top: 30px;
     flex-direction: column;
-    padding-left: 40px;
+    
 }
 
 .titolo1 {
-    margin-left: 15px;
+    margin-left: 60px;
 }
 
 h2 {
@@ -99,20 +106,20 @@ h2 {
 .podio {
     float: left;
     margin-right: 10px;
-    font-size: x-large;
+    font-size: xx-large;
     font-weight: bolder;
-    opacity: 20%;
+    opacity: 25%;
 }
 
 .articoli1 {
     flex-wrap: wrap;
-    justify-content:space-between;
+    justify-content:space-evenly;
     
 }
 
 .singoloArticolo {
     width: 25%;
-    margin-left: 15px;
+    margin-left: 0px;
     margin-bottom: 20px;
     padding-right: 20px;
 }
@@ -129,13 +136,18 @@ h2 {
     font-weight: bolder;
     margin-bottom: 10px;
     padding-top: 10px;
-    padding-left: 40px;
+    padding-left: 55px;
 }
 
 h5 {
     font-weight: bold;
     font-size: small;
     margin-left: 5px ;
+}
+
+.onLine {
+    display: flex;
+    align-items: center;
 }
 
 .footerArticolo {
@@ -159,7 +171,7 @@ h5 {
 }
 
 section {
-    width: 60%;
+    width: 70%;
 }
 
 h4 {
@@ -179,14 +191,23 @@ h2 {
 }
 
 .imgNew {
-    width: 20%;
-    margin-left: 30px;
+    width: 30%;
+    margin-left: 15px;
     align-items: flex-end;
 }
 
+.footerNer {
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 5px;
+}
 /*Aside*/
 .fixedContainer {
-    width: 35%;
+    width: 100%;
+    position: sticky;
+    top: 40px;
+    right: 0;
+    flex-direction: column;
 }
 
 .utente {
@@ -196,4 +217,49 @@ h2 {
 
 .citazione {
     padding-bottom: 10px;
+}
+
+h3 {
+    font-family: 'Roboto', sans-serif;
+    font-size: medium;
+    font-weight: bold;
+    margin-bottom: 17px;
+}
+
+.asideButtons {
+    margin-bottom: 30px;
+}
+
+.asideButtons button {
+    font-family: 'Roboto', sans-serif;
+    font-size: small;
+    font-weight: 500;
+    padding: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
+    border-radius: 5px;
+    border-color: #c0c0c0;
+    border-width: 0.5px;
+    margin-bottom: 10px;
+}
+
+hr {
+    height: 1px;
+    background-color: #191919;
+    opacity: 50%;
+    margin-bottom: 30px;
+}
+
+.asideFooter {
+    display: flex;
+    flex-wrap: wrap;
+    width: 80%;
+}
+
+.asideFooter a {
+    font-family: 'Roboto', sans-serif;
+    text-decoration: none;
+    padding-right: 15px;
+    padding-bottom: 20px;
+    color: #191919;
 }
